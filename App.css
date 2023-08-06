@@ -1,0 +1,136 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  /* App container */
+  .app {
+    padding: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Dark mode */
+  .dark-mode {
+    background-color: #222;
+    color: #4613d3;
+  }
+  
+  /* Light mode */
+  .light-mode {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+  }
+  
+  .header button {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Search and Filters */
+  .search-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    font-size: 16px;
+  }
+  
+  .region-filter {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+  }
+  
+  /* Country List */
+  .country-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .country-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+  }
+  
+  .country-card:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .country-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Country Detail */
+  .country-detail {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .border-countries {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .border-country {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .border-country:hover {
+    background-color: #ddd;
+  }
+  .app-header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f0f0f0; /* Add your preferred background color */
+    border-bottom: 1px solid #ccc;
+    font-style: oblique;
+  }
